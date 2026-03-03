@@ -1,0 +1,16 @@
+using System;
+
+namespace MiniStudentManagementSystem
+{
+    public partial class Default : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Default home page
+            // Ensure response encoding is UTF-8 so Azerbaijani characters render correctly
+            Response.ContentEncoding = System.Text.Encoding.UTF8;
+            Response.HeaderEncoding = System.Text.Encoding.UTF8;
+            Response.Charset = "utf-8";
+        }
+    }
+}

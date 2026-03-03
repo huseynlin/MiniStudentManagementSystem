@@ -1,0 +1,110 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="MiniStudentManagementSystem.Login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Daxil ol - Mini Tələbə İdarəetmə Sistemi</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <h1>Daxil olun</h1>
+
+            <div class="form-group">
+                <label for="UsernameTextBox">İstifadəçi adı:</label>
+                <asp:TextBox ID="UsernameTextBox" runat="server"></asp:TextBox>
+            </div>
+
+            <div class="form-group">
+                <label for="PasswordTextBox">Şifrə:</label>
+                <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password"></asp:TextBox>
+            </div>
+
+            <div>
+                <asp:Button ID="LoginButton" runat="server" Text="Daxil ol" OnClick="LoginButton_Click" />
+            </div>
+
+            <asp:Label ID="MessageLabel" runat="server" Visible="false"></asp:Label>
+
+            <div class="register-link">
+                <p>Hesabınız yoxdur? <a href="Register.aspx">Buradan qeydiyyatdan keçin</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
