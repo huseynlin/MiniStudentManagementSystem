@@ -3,120 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\students.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\students.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\students.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\students.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\app_data\\students.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\app_data\\students.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\students.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\register.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\register.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\students.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\students.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\logout.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\logout.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\readme_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\readme_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\students.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\students.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\testing_guide_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\testing_guide_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\fixes_summary_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\fixes_summary_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\register.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\register.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\quick_reference_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\quick_reference_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\detailed_fix_explanation_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\detailed_fix_explanation_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\final_summary_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\final_summary_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\project_completion_report_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\project_completion_report_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\completion_checklist_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\completion_checklist_az.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|c:\\users\\nural\\downloads\\webc#\\ministudentmanagementsystem\\ministudentmanagementsystem\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\ministudentmanagementsystem\\logout.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1508D0D5-BE7D-4401-A11C-2B293BB7CFE9}|MiniStudentManagementSystem\\MiniStudentManagementSystem.csproj|solutionrelative:ministudentmanagementsystem\\logout.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,141 +90,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\README.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\README.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\README.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T21:05:48.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "COMPLETION_CHECKLIST_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\COMPLETION_CHECKLIST_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\COMPLETION_CHECKLIST_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\COMPLETION_CHECKLIST_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\COMPLETION_CHECKLIST_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:13:12.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "PROJECT_COMPLETION_REPORT_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\PROJECT_COMPLETION_REPORT_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\PROJECT_COMPLETION_REPORT_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\PROJECT_COMPLETION_REPORT_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\PROJECT_COMPLETION_REPORT_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:12:41.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FINAL_SUMMARY_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\FINAL_SUMMARY_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\FINAL_SUMMARY_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\FINAL_SUMMARY_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\FINAL_SUMMARY_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:12:02.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DETAILED_FIX_EXPLANATION_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\DETAILED_FIX_EXPLANATION_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\DETAILED_FIX_EXPLANATION_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\DETAILED_FIX_EXPLANATION_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\DETAILED_FIX_EXPLANATION_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:11:24.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "students.json",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\App_Data\\students.json",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\App_Data\\students.json",
               "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\App_Data\\students.json",
               "RelativeToolTip": "MiniStudentManagementSystem\\App_Data\\students.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA1AQAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-03T19:46:20.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "QUICK_REFERENCE_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\QUICK_REFERENCE_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\QUICK_REFERENCE_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\QUICK_REFERENCE_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\QUICK_REFERENCE_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:10:53.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FIXES_SUMMARY_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\FIXES_SUMMARY_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\FIXES_SUMMARY_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\FIXES_SUMMARY_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\FIXES_SUMMARY_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:10:27.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TESTING_GUIDE_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\TESTING_GUIDE_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\TESTING_GUIDE_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\TESTING_GUIDE_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\TESTING_GUIDE_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:09:54.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "README_AZ.md",
-              "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\README_AZ.md",
-              "RelativeDocumentMoniker": "MiniStudentManagementSystem\\README_AZ.md",
-              "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\README_AZ.md",
-              "RelativeToolTip": "MiniStudentManagementSystem\\README_AZ.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-03T20:09:24.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Login.aspx",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Login.aspx",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Login.aspx",
@@ -273,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Register.aspx",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Register.aspx",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Register.aspx",
@@ -286,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "users.json",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\App_Data\\users.json",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\App_Data\\users.json",
@@ -299,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Models\\Student.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Models\\Student.cs",
@@ -312,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Models\\User.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Models\\User.cs",
@@ -320,12 +167,11 @@
               "RelativeToolTip": "MiniStudentManagementSystem\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T19:46:13.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T19:46:13.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 14,
               "Title": "Default.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Default.aspx.designer.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Default.aspx.designer.cs",
@@ -338,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Logout.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Logout.aspx.designer.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Logout.aspx.designer.cs",
@@ -346,12 +192,11 @@
               "RelativeToolTip": "MiniStudentManagementSystem\\Logout.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T19:48:55.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T19:48:55.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "Students.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Students.aspx.designer.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Students.aspx.designer.cs",
@@ -364,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Login.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Login.aspx.designer.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Login.aspx.designer.cs",
@@ -372,12 +217,11 @@
               "RelativeToolTip": "MiniStudentManagementSystem\\Login.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T19:48:50.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T19:48:50.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Register.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Register.aspx.designer.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Register.aspx.designer.cs",
@@ -385,25 +229,24 @@
               "RelativeToolTip": "MiniStudentManagementSystem\\Register.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T19:48:47.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T19:48:47.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Default.aspx.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Default.aspx.cs",
               "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Default.aspx.cs",
               "RelativeToolTip": "MiniStudentManagementSystem\\Default.aspx.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAD4vxAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T19:47:20.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Default.aspx",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Default.aspx",
@@ -416,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Web.config",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Web.config",
@@ -429,20 +272,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "Logout.aspx.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Logout.aspx.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Logout.aspx.cs",
               "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Logout.aspx.cs",
               "RelativeToolTip": "MiniStudentManagementSystem\\Logout.aspx.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAABBwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T19:47:09.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "Logout.aspx",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Logout.aspx",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Logout.aspx",
@@ -455,20 +298,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Students.aspx.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Students.aspx.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Students.aspx.cs",
               "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Students.aspx.cs",
               "RelativeToolTip": "MiniStudentManagementSystem\\Students.aspx.cs",
-              "ViewState": "AgIAADYBAAAAAAAAAAAgwFoBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAQwFoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T19:47:04.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "Students.aspx",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Students.aspx",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Students.aspx",
@@ -481,26 +324,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Login.aspx.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Login.aspx.cs",
               "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Login.aspx.cs",
               "RelativeToolTip": "MiniStudentManagementSystem\\Login.aspx.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T19:46:43.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Register.aspx.cs",
               "DocumentMoniker": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Register.aspx.cs",
               "RelativeDocumentMoniker": "MiniStudentManagementSystem\\Register.aspx.cs",
               "ToolTip": "C:\\Users\\nural\\Downloads\\WebC#\\MiniStudentManagementSystem\\MiniStudentManagementSystem\\Register.aspx.cs",
               "RelativeToolTip": "MiniStudentManagementSystem\\Register.aspx.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAIBJwMoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T19:46:32.583Z",
               "EditorCaption": ""

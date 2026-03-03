@@ -1,77 +1,88 @@
-namespace MiniStudentManagementSystem {
-    
-    
-    public partial class Students {
-        
+//------------------------------------------------------------------------------
+// <otomatik olarak oluşturulmuş>
+//     Bu kod bir araç tarafından oluşturuldu.
+//
+//     Bu dosyada yapılacak değişiklikler hatalı davranışa neden olabilir ve
+//     kod tekrar üretildi. 
+// </otomatik olarak oluşturulmuş>
+//------------------------------------------------------------------------------
+
+namespace MiniStudentManagementSystem
+{
+
+
+    public partial class Students
+    {
+
         /// <summary>
-        /// form1 control.
+        /// form1 denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
-        /// UsernameLabel control.
+        /// UsernameLabel denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label UsernameLabel;
-        
+
         /// <summary>
-        /// MessageLabel control.
+        /// MessageLabel denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label MessageLabel;
-        
+
         /// <summary>
-        /// NameTextBox control.
+        /// NameTextBox denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox NameTextBox;
-        
+
         /// <summary>
-        /// SurnameTextBox control.
+        /// SurnameTextBox denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SurnameTextBox;
-        
+
         /// <summary>
-        /// StudentNumberTextBox control.
+        /// StudentNumberTextBox denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox StudentNumberTextBox;
-        
+
         /// <summary>
-        /// AddButton control.
+        /// AddButton denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddButton;
-        
+
         /// <summary>
-        /// StudentsGridView control.
+        /// StudentsGridView denetimi.
         /// </summary>
         /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView StudentsGridView;
     }
