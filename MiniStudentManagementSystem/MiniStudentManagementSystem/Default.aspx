@@ -1,0 +1,76 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MiniStudentManagementSystem.Default" ResponseEncoding="utf-8" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mini Tələbə İdarəetmə Sistemi</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        a {
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .login-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+        .register-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .register-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <h1>Mini Tələbə İdarəetmə Sistemi</h1>
+            <p>Xoş gəldiniz! Davam etmək üçün lütfən daxil olun və ya qeydiyyatdan keçin.</p>
+
+            <div class="buttons">
+                <a href="Login.aspx" class="login-btn">Daxil ol</a>
+                <a href="Register.aspx" class="register-btn">Qeydiyyat</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

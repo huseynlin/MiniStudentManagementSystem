@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web.Script.Serialization;
+using MiniStudentManagementSystem.Models;
+
+namespace MiniStudentManagementSystem
+{
+    public partial class Login : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Səhifə yükləndikdə heç bir şey etmə
+        }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // TextBoxlardan qiymətləri al
+                string username = UsernameTextBox.Text.Trim();
+                string password = PasswordTextBox.Text.Trim();
+
+                // Bütün sahələrin doldurulduğunu yoxla
+                if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                {
+                    ShowErrorMessage("Lütfən istifadəçi adı və şifrəni daxil edin");
+                    return;
+                }
+
+                // App_Data qovluğunun yolunu al
+                string appDataPath = Server.MapPath("~/App_Data");
+                string filePath = Path.Combine(appDataPath, "users.json");
+
+                // JSON faylından istifadəçiləri oxu
+                List<User> usersList = ReadUsersFromFile(filePath);
+
+                // Uyğun istifadəçi adı və şifrə ilə istifadəçi axtarışı et (FirstOrDefault istifadə edərək)
+                User user = usersList.FirstOrDefault(u => u.Username == username && u.Password == password);
+
+                if (user == null)
+                {
+                    ShowErrorMessage("Yanlış istifadəçi adı və ya şifrə");
+                    return;
+                }
+
+                // Daxil olma uğurlu oldu - Sessiyasını tənzimlə
+                Session["username"] = username;
+
+                // HttpCookie yaratılsın - 30 dəqiqə müddətində
+                System.Web.HttpCookie cookie = new System.Web.HttpCookie("username");
+                cookie.Value = username;
+                cookie.Expires = DateTime.Now.AddMinutes(30);
+                Response.Cookies.Add(cookie);
+
+                // Tələbələr səhifəsinə yönləndir
+                Response.Redirect("Students.aspx");
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Xəta baş verdi: " + ex.Message);
+            }
+        }
+
+        // JSON faylından istifadəçiləri oxu
+        private List<User> ReadUsersFromFile(string filePath)
+        {
+            try
+            {
+                // Fayl mövcud deyilsə, boş siyahı qaytar
+                if (!File.Exists(filePath))
+                {
+                    return new List<User>();
+                }
+
+                // Fayl məzmununu oxu
+                string json = File.ReadAllText(filePath);
+
+                // Fayl boş olarsa, boş siyahı qaytar
+                if (string.IsNullOrWhiteSpace(json) || json.Trim() == "[]")
+                {
+                    return new List<User>();
+                }
+
+                // JSON-u List<User>-ə çevir
+                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                List<User> users = serializer.Deserialize<List<User>>(json);
+
+                return users ?? new List<User>();
+            }
+            catch
+            {
+                // Xəta halında boş siyahı qaytar
+                return new List<User>();
+            }
+        }
+
+        // Xəta mesajını göstər
+        private void ShowErrorMessage(string message)
+        {
+            MessageLabel.Text = message;
+            MessageLabel.CssClass = "message error";
+            MessageLabel.Visible = true;
+        }
+    }
+}
