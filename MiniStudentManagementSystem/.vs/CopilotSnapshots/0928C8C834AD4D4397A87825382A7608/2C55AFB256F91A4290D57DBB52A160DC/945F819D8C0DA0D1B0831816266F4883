@@ -1,0 +1,293 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web.Script.Serialization;
+using MiniStudentManagementSystem.Models;
+
+namespace MiniStudentManagementSystem
+{
+    public partial class Students : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Check if user is logged in
+            if (Session["username"] == null)
+            {
+                // Redirect to login if session is empty
+                Response.Redirect("Login.aspx");
+            }
+
+            // Load students only on first page load
+            if (!IsPostBack)
+            {
+                // Display username
+                UsernameLabel.Text = Session["username"].ToString();
+
+                // Load and display students
+                LoadStudents();
+            }
+        }
+
+        // Load students from JSON file and bind to GridView
+        private void LoadStudents()
+        {
+            try
+            {
+                string filePath = Server.MapPath("~/App_Data/students.json");
+
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // Bind list to GridView
+                StudentsGridView.DataSource = studentsList;
+                StudentsGridView.DataBind();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Error loading students: " + ex.Message);
+            }
+        }
+
+        // Add new student button click
+        protected void AddButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Get input values
+                string name = NameTextBox.Text.Trim();
+                string surname = SurnameTextBox.Text.Trim();
+                string studentNumber = StudentNumberTextBox.Text.Trim();
+
+                // Validate inputs
+                if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || string.IsNullOrEmpty(studentNumber))
+                {
+                    ShowErrorMessage("Please fill all fields");
+                    return;
+                }
+
+                string filePath = Server.MapPath("~/App_Data/students.json");
+
+                // Read existing students
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // Check if StudentNumber already exists (duplicate check)
+                Student existingStudent = studentsList.FirstOrDefault(s => s.StudentNumber == studentNumber);
+
+                if (existingStudent != null)
+                {
+                    ShowErrorMessage("Student Number already exists");
+                    return;
+                }
+
+                // Create new student
+                Student newStudent = new Student
+                {
+                    Name = name,
+                    Surname = surname,
+                    StudentNumber = studentNumber
+                };
+
+                // Add to list
+                studentsList.Add(newStudent);
+
+                // Save to file
+                SaveStudentsToFile(filePath, studentsList);
+
+                // Clear textboxes
+                NameTextBox.Text = "";
+                SurnameTextBox.Text = "";
+                StudentNumberTextBox.Text = "";
+
+                // Show success message
+                ShowSuccessMessage("Student added successfully");
+
+                // Reload GridView
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Error adding student: " + ex.Message);
+            }
+        }
+
+        // GridView row editing
+        protected void StudentsGridView_RowEditing(object sender, System.Web.UI.WebControls.GridViewEditEventArgs e)
+        {
+            StudentsGridView.EditIndex = e.NewEditIndex;
+            LoadStudents();
+        }
+
+        // GridView row updating
+        protected void StudentsGridView_RowUpdating(object sender, System.Web.UI.WebControls.GridViewUpdateEventArgs e)
+        {
+            try
+            {
+                // Get row index
+                int rowIndex = e.RowIndex;
+
+                // Get updated values
+                string name = e.NewValues["Name"].ToString();
+                string surname = e.NewValues["Surname"].ToString();
+                string studentNumber = e.NewValues["StudentNumber"].ToString();
+
+                // Validate
+                if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || string.IsNullOrEmpty(studentNumber))
+                {
+                    ShowErrorMessage("Please fill all fields");
+                    return;
+                }
+
+                string filePath = Server.MapPath("~/App_Data/students.json");
+
+                // Read students
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // Get original student number (before update)
+                string originalStudentNumber = studentsList[rowIndex].StudentNumber;
+
+                // Check if new StudentNumber is duplicate (but allow same number for same row)
+                Student duplicateStudent = studentsList.FirstOrDefault(s => s.StudentNumber == studentNumber && s.StudentNumber != originalStudentNumber);
+
+                if (duplicateStudent != null)
+                {
+                    ShowErrorMessage("Student Number already exists");
+                    StudentsGridView.EditIndex = -1;
+                    LoadStudents();
+                    return;
+                }
+
+                // Update student
+                studentsList[rowIndex].Name = name;
+                studentsList[rowIndex].Surname = surname;
+                studentsList[rowIndex].StudentNumber = studentNumber;
+
+                // Save to file
+                SaveStudentsToFile(filePath, studentsList);
+
+                // Stop editing mode
+                StudentsGridView.EditIndex = -1;
+
+                // Show success message
+                ShowSuccessMessage("Student updated successfully");
+
+                // Reload GridView
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Error updating student: " + ex.Message);
+            }
+        }
+
+        // GridView row cancel editing
+        protected void StudentsGridView_RowCancelingEdit(object sender, System.Web.UI.WebControls.GridViewCancelEditEventArgs e)
+        {
+            StudentsGridView.EditIndex = -1;
+            LoadStudents();
+        }
+
+        // GridView row deleting
+        protected void StudentsGridView_RowDeleting(object sender, System.Web.UI.WebControls.GridViewDeleteEventArgs e)
+        {
+            try
+            {
+                string filePath = Server.MapPath("~/App_Data/students.json");
+
+                // Read students
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // Remove student at index
+                studentsList.RemoveAt(e.RowIndex);
+
+                // Save to file
+                SaveStudentsToFile(filePath, studentsList);
+
+                // Show success message
+                ShowSuccessMessage("Student deleted successfully");
+
+                // Reload GridView
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Error deleting student: " + ex.Message);
+            }
+        }
+
+        // Read students from JSON file
+        private List<Student> ReadStudentsFromFile(string filePath)
+        {
+            try
+            {
+                // If file does not exist, create with sample students
+                if (!File.Exists(filePath))
+                {
+                    List<Student> sampleStudents = new List<Student>
+                    {
+                        new Student { Name = "Ahmet", Surname = "Yilmaz", StudentNumber = "2023001" },
+                        new Student { Name = "Fatima", Surname = "Demir", StudentNumber = "2023002" },
+                        new Student { Name = "Emre", Surname = "Kaya", StudentNumber = "2023003" },
+                        new Student { Name = "Ayse", Surname = "Ozturk", StudentNumber = "2023004" },
+                        new Student { Name = "Mehmet", Surname = "Arslan", StudentNumber = "2023005" }
+                    };
+
+                    SaveStudentsToFile(filePath, sampleStudents);
+                    return sampleStudents;
+                }
+
+                // Read file content
+                string json = File.ReadAllText(filePath);
+
+                // If empty, return empty list
+                if (string.IsNullOrWhiteSpace(json))
+                {
+                    return new List<Student>();
+                }
+
+                // Deserialize JSON
+                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                List<Student> students = serializer.Deserialize<List<Student>>(json);
+
+                return students ?? new List<Student>();
+            }
+            catch
+            {
+                return new List<Student>();
+            }
+        }
+
+        // Save students to JSON file
+        private void SaveStudentsToFile(string filePath, List<Student> studentsList)
+        {
+            try
+            {
+                // Serialize to JSON
+                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                string json = serializer.Serialize(studentsList);
+
+                // Write to file
+                File.WriteAllText(filePath, json);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error saving students: " + ex.Message);
+            }
+        }
+
+        // Show success message
+        private void ShowSuccessMessage(string message)
+        {
+            MessageLabel.Text = message;
+            MessageLabel.CssClass = "message success";
+            MessageLabel.Visible = true;
+        }
+
+        // Show error message
+        private void ShowErrorMessage(string message)
+        {
+            MessageLabel.Text = message;
+            MessageLabel.CssClass = "message error";
+            MessageLabel.Visible = true;
+        }
+    }
+}

@@ -1,0 +1,346 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web.Script.Serialization;
+using MiniStudentManagementSystem.Models;
+
+namespace MiniStudentManagementSystem
+{
+    public partial class Students : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // İstifadəçinin daxil olduğunu yoxla
+            if (Session["username"] == null)
+            {
+                // Sessiya boş olarsa Daxil ol səhifəsinə yönləndir
+                Response.Redirect("Login.aspx");
+            }
+
+            // Tələbələri yalnız səhifənin ilk yükləndiyində oxu
+            if (!IsPostBack)
+            {
+                // İstifadəçi adını göstər
+                UsernameLabel.Text = Session["username"].ToString();
+
+                // Tələbələri yükləmə
+                LoadStudents();
+            }
+        }
+
+        // JSON faylından tələbələri oxu və GridView-ə bağla
+        private void LoadStudents()
+        {
+            try
+            {
+                // App_Data qovluğunun yolunu al
+                string appDataPath = Server.MapPath("~/App_Data");
+                if (!Directory.Exists(appDataPath))
+                {
+                    Directory.CreateDirectory(appDataPath);
+                }
+
+                string filePath = Path.Combine(appDataPath, "students.json");
+
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // GridView-ə siyahı bağla
+                StudentsGridView.DataSource = studentsList;
+                StudentsGridView.DataBind();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Tələbələri yükləmə xətası: " + ex.Message);
+            }
+        }
+
+        // Yeni tələbə əlavə etmə düyməsinin klikində
+        protected void AddButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Input qiymətlərini al
+                string name = NameTextBox.Text.Trim();
+                string surname = SurnameTextBox.Text.Trim();
+                string studentNumber = StudentNumberTextBox.Text.Trim();
+
+                // Input doğrula
+                if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || string.IsNullOrEmpty(studentNumber))
+                {
+                    ShowErrorMessage("Lütfən bütün sahələri doldurun");
+                    return;
+                }
+
+                // App_Data qovluğunun yolunu al
+                string appDataPath = Server.MapPath("~/App_Data");
+                if (!Directory.Exists(appDataPath))
+                {
+                    Directory.CreateDirectory(appDataPath);
+                }
+
+                string filePath = Path.Combine(appDataPath, "students.json");
+
+                // Mövcud tələbələri oxu
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // Tələbə Nömrəsinin mövcudluğunu yoxla (dublikat yoxlaması)
+                Student existingStudent = studentsList.FirstOrDefault(s => s.StudentNumber == studentNumber);
+
+                if (existingStudent != null)
+                {
+                    ShowErrorMessage("Bu Tələbə Nömrəsi artıq mövcuddur");
+                    return;
+                }
+
+                // Yeni tələbə yaratılsın
+                Student newStudent = new Student
+                {
+                    Name = name,
+                    Surname = surname,
+                    StudentNumber = studentNumber
+                };
+
+                // Siyahıya əlavə et
+                studentsList.Add(newStudent);
+
+                // Faylda sax
+                SaveStudentsToFile(filePath, studentsList);
+
+                // TextBoxları təmizlə
+                NameTextBox.Text = "";
+                SurnameTextBox.Text = "";
+                StudentNumberTextBox.Text = "";
+
+                // Uğur mesajını göstər
+                ShowSuccessMessage("Tələbə uğurla əlavə olundu");
+
+                // GridView yenilə
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Tələbə əlavə etmə xətası: " + ex.Message);
+            }
+        }
+
+        // GridView sırasını redaktə etmə
+        protected void StudentsGridView_RowEditing(object sender, System.Web.UI.WebControls.GridViewEditEventArgs e)
+        {
+            StudentsGridView.EditIndex = e.NewEditIndex;
+            LoadStudents();
+        }
+
+        // GridView sırasını yeniləmə
+        protected void StudentsGridView_RowUpdating(object sender, System.Web.UI.WebControls.GridViewUpdateEventArgs e)
+        {
+            try
+            {
+                // Sıra indeksini al
+                int rowIndex = e.RowIndex;
+
+                // Yeniləmə qiymətlərini al
+                string name = e.NewValues["Name"].ToString();
+                string surname = e.NewValues["Surname"].ToString();
+                string studentNumber = e.NewValues["StudentNumber"].ToString();
+
+                // Doğrula
+                if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) || string.IsNullOrEmpty(studentNumber))
+                {
+                    ShowErrorMessage("Lütfən bütün sahələri doldurun");
+                    return;
+                }
+
+                // App_Data qovluğunun yolunu al
+                string appDataPath = Server.MapPath("~/App_Data");
+                string filePath = Path.Combine(appDataPath, "students.json");
+
+                // Tələbələri oxu
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // Orijinal tələbə nömrəsini al (yeniləmədən əvvəl)
+                string originalStudentNumber = studentsList[rowIndex].StudentNumber;
+
+                // Yeni Tələbə Nömrəsinin dublikat olduğunu yoxla (lakin eyni sıra üçün eyni nömrəyə icazə ver)
+                Student duplicateStudent = studentsList.FirstOrDefault(s => s.StudentNumber == studentNumber && s.StudentNumber != originalStudentNumber);
+
+                if (duplicateStudent != null)
+                {
+                    ShowErrorMessage("Bu Tələbə Nömrəsi artıq mövcuddur");
+                    StudentsGridView.EditIndex = -1;
+                    LoadStudents();
+                    return;
+                }
+
+                // Tələbəni yenilə
+                studentsList[rowIndex].Name = name;
+                studentsList[rowIndex].Surname = surname;
+                studentsList[rowIndex].StudentNumber = studentNumber;
+
+                // Faylda sax
+                SaveStudentsToFile(filePath, studentsList);
+
+                // Redaktə modunu dayandır
+                StudentsGridView.EditIndex = -1;
+
+                // Uğur mesajını göstər
+                ShowSuccessMessage("Tələbə uğurla yenilədi");
+
+                // GridView yenilə
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Tələbə yeniləmə xətası: " + ex.Message);
+            }
+        }
+
+        // GridView sırasının redaksiyasını ləğv et
+        protected void StudentsGridView_RowCancelingEdit(object sender, System.Web.UI.WebControls.GridViewCancelEditEventArgs e)
+        {
+            StudentsGridView.EditIndex = -1;
+            LoadStudents();
+        }
+
+        // GridView sırasını silmə
+        protected void StudentsGridView_RowDeleting(object sender, System.Web.UI.WebControls.GridViewDeleteEventArgs e)
+        {
+            try
+            {
+                // App_Data qovluğunun yolunu al
+                string appDataPath = Server.MapPath("~/App_Data");
+                string filePath = Path.Combine(appDataPath, "students.json");
+
+                // Tələbələri oxu
+                List<Student> studentsList = ReadStudentsFromFile(filePath);
+
+                // İndeksdəki tələbəni sil
+                studentsList.RemoveAt(e.RowIndex);
+
+                // Faylda sax
+                SaveStudentsToFile(filePath, studentsList);
+
+                // Uğur mesajını göstər
+                ShowSuccessMessage("Tələbə uğurla silindi");
+
+                // GridView yenilə
+                LoadStudents();
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage("Tələbə silmə xətası: " + ex.Message);
+            }
+        }
+
+        // JSON faylından tələbələri oxu
+        private List<Student> ReadStudentsFromFile(string filePath)
+        {
+            try
+            {
+                // Fayl mövcud deyilsə, nümunə tələbələr ilə yaratılsın
+                if (!File.Exists(filePath))
+                {
+                    List<Student> sampleStudents = new List<Student>
+                    {
+                        new Student { Name = "Ahmet", Surname = "Yilmaz", StudentNumber = "2023001" },
+                        new Student { Name = "Fatima", Surname = "Demir", StudentNumber = "2023002" },
+                        new Student { Name = "Emre", Surname = "Kaya", StudentNumber = "2023003" },
+                        new Student { Name = "Ayse", Surname = "Ozturk", StudentNumber = "2023004" },
+                        new Student { Name = "Mehmet", Surname = "Arslan", StudentNumber = "2023005" }
+                    };
+
+                    SaveStudentsToFile(filePath, sampleStudents);
+                    return sampleStudents;
+                }
+
+                // Fayl məzmununu oxu
+                string json = File.ReadAllText(filePath);
+
+                // Boş olarsa, boş siyahı qaytar
+                if (string.IsNullOrWhiteSpace(json) || json.Trim() == "[]")
+                {
+                    return new List<Student>();
+                }
+
+                // JSON-u çevir
+                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                List<Student> students = serializer.Deserialize<List<Student>>(json);
+
+                return students ?? new List<Student>();
+            }
+            catch
+            {
+                // Xəta halında boş siyahı qaytar
+                return new List<Student>();
+            }
+        }
+
+        // Tələbələri JSON faylına sax
+        private void SaveStudentsToFile(string filePath, List<Student> studentsList)
+        {
+            try
+            {
+                // JSON-a çevir
+                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                string json = serializer.Serialize(studentsList);
+
+                // Faylın yerləşdiyi qovluğun mövcudluğunu təmin et
+                string directory = Path.GetDirectoryName(filePath);
+                if (!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
+                // Əgər fayl mövcuddursa və readonly atributu varsa, onu normal et
+                if (File.Exists(filePath))
+                {
+                    try
+                    {
+                        FileAttributes attrs = File.GetAttributes(filePath);
+                        if ((attrs & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
+                        {
+                            attrs = attrs & ~FileAttributes.ReadOnly;
+                            File.SetAttributes(filePath, attrs);
+                        }
+                    }
+                    catch
+                    {
+                        // Atributları dəyişmək mümkün olmayanda davam et
+                    }
+                }
+
+                // Faylı təhlükəsiz şəkildə açıb yaz
+                byte[] bytes = System.Text.Encoding.UTF8.GetBytes(json);
+                using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+                    fs.Write(bytes, 0, bytes.Length);
+                    fs.Flush();
+                }
+            }
+            catch (UnauthorizedAccessException uaEx)
+            {
+                throw new Exception("Tələbələri saxlamaqda xəta: Fayla girişə icazə yoxdur. Server icazələrini yoxlayın. (" + uaEx.Message + ")");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Tələbələri saxlamaqda xəta: " + ex.Message);
+            }
+        }
+
+        // Uğur mesajını göstər
+        private void ShowSuccessMessage(string message)
+        {
+            MessageLabel.Text = message;
+            MessageLabel.CssClass = "message success";
+            MessageLabel.Visible = true;
+        }
+
+        // Xəta mesajını göstər
+        private void ShowErrorMessage(string message)
+        {
+            MessageLabel.Text = message;
+            MessageLabel.CssClass = "message error";
+            MessageLabel.Visible = true;
+        }
+    }
+}
